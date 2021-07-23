@@ -1,0 +1,29 @@
+﻿<Window x:Class="ClienteJugador.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClienteJugador"
+        mc:Ignorable="d"
+        Title="Cliente Jugador" Height="450" Width="800" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid Background="LightCyan">
+        
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="Ronda Guanyats: 0" Name="tbNRodnesGuanyats" TextAlignment="Center" FontSize="30"/>
+            <TextBlock Text="Servidor vs Client"    HorizontalAlignment="Center"  VerticalAlignment="Center" />
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10" Background="LightBlue" > 
+                <Image   Height="100" Width="200" Margin="0,0,15,0" Name="imgServer" />
+
+                <Image   Height="100"  Width="200" Margin="15,0,0,0" Name="imgJugador"/>
+            </StackPanel>
+            <Button   Height="50" Margin="10" FontSize="27" Name="btnConectar" Click="btnConectar_Click">Connectar</Button>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"   Margin="5">
+                <Button Style="{StaticResource btnSytleJocs}"  Name="btnPedraS" Click="btnPedraS_Click">Pedra</Button>
+                <Button Style="{StaticResource btnSytleJocs}"  Name="btnPapel" Click="btnPapel_Click">Papel</Button>
+                <Button Style="{StaticResource btnSytleJocs}" Name="btnTisores" Click="btnTisores_Click">Tisores</Button>
+            </StackPanel> 
+            <TextBlock x:Name="tbMisatge" Style="{StaticResource tbsStyles}"></TextBlock>
+             
+        </StackPanel>
+    </Grid>
+</Window>
