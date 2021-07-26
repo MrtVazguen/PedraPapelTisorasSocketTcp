@@ -5,7 +5,7 @@
 
 
 jugada servidor vs cliente
-![PedraPapelTisorasJugada](https://user-images.githubusercontent.com/33204630/127059740-7d1a3692-9a92-41c3-a77e-6f02ae823109.PNG)
+![PedraPapelTisorasJugada](https://user-images.githubusercontent.com/33204630/127060435-e255da0c-a892-40d3-ad6a-5707b3e6b985.PNG)
 
 
 
